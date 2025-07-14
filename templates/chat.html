@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI Task Scheduler</title>
+</head>
+<body>
+    <h2>Hi! Your calendar is connected.</h2>
+    <form action="/schedule-tasks" method="POST">
+    <textarea name="task_input" rows="6" cols="60" placeholder="Describe your tasks here..."></textarea><br><br>
+    
+    <label for="priority">Priority (for all tasks):</label>
+    <select name="priority">
+        <option value="medium" selected>Medium</option>
+        <option value="high">High</option>
+        <option value="low">Low</option>
+    </select><br><br>
+    
+    <input type="submit" value="Schedule">
+</form>
+
+
+    <p><a href="/logout">Logout</a></p>
+</body>
+</html>
